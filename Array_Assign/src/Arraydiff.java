@@ -1,9 +1,21 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.lang.Math;
+
 
 public class Arraydiff {
 
 	    public static void main(String[] args){
+	    	
+	    	System.out.println("Math class methods");
+	    	System.out.println(Math.addExact(2, 4));
+	    	System.out.println(Math.min(5, 9));
+	    	System.out.println(Math.subtractExact(12, 5));
+	    	System.out.println(Math.sqrt(4));
+	    	System.out.println(Math.log10(5));
+	    	System.out.println(Math.abs(5.1));
+	    	
+	    	 
 	        Scanner in = new Scanner(System.in);
 	        System.out.println("Enter the size of the array");
 	        int size = in.nextInt();
@@ -38,8 +50,8 @@ public class Arraydiff {
 	                max=arr[ii];
 	            }
 	        }
-	        System.out.println("The minimum in the array::"+min);
-	        System.out.println("The maximum in the array::"+max);
+	        System.out.println("Minimum value in the array::"+min);
+	        System.out.println("Maximum value  in the array::"+max);
 	        int result = max-min;
 	        System.out.println(result);
 	    }
